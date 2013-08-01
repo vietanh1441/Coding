@@ -1,5 +1,5 @@
 /* 
- * This program generate a random testing for the triangle.c
+ * This program generate a random letter
  */
  
 #include <stdio.h>
@@ -36,6 +36,9 @@ void testme()
 		while (1) {
 			c = inputChar();
 			s = inputString();
+			printf("c = %c  ", c);
+			printf("s = %s  ", s);
+			printf("state = %d  \n",state)
 			if (c == '[' && state == 0) state = 1;
 			if (c == '(' && state == 1) state = 2;
 			if (c == '{' && state == 2) state = 3;
